@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xmlns="http://www.demandware.com/xml/impex/metadata/2006-10-31">
+    <custom-type type-id="NewsletterSubscription">
+        <display-name xml:lang="x-default">SFRA Custom Object</display-name>
+        <staging-mode>no-staging</staging-mode>
+        <storage-scope>site</storage-scope>
+        <key-definition attribute-id="email">
+            <type>string</type>
+            <min-length>0</min-length>
+        </key-definition>
+        <attribute-definitions>
+            <attribute-definition attribute-id="custom_firstName">
+                <display-name xml:lang="x-default">firstName</display-name>
+                <type>string</type>
+                <localizable-flag>false</localizable-flag>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="custom_lastName">
+                <display-name xml:lang="x-default">lastName</display-name>
+                <type>string</type>
+                <localizable-flag>false</localizable-flag>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+        </attribute-definitions>
+        <group-definitions>
+            <attribute-group group-id="custom_sfra">
+                <display-name xml:lang="x-default">Custom SFRA Group</display-name>
+                <attribute attribute-id="email"/>
+                <attribute attribute-id="custom_lastName"/>
+                <attribute attribute-id="custom_firstName"/>
+            </attribute-group>
+        </group-definitions>
+    </custom-type>
+
+</metadata>

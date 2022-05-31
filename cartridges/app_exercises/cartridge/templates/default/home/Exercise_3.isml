@@ -1,0 +1,14 @@
+<iscomment> Create a content asset
+Add an image to it (in the field Desktop Banner Image, which you should create)
+Create an ISML template that will retrieve the Content Asset and display it
+    Don't forget to add the CA's name as the image's title
+Copy and paste homePage.isml template in your app_yourcartridge cartridge (that helps us to prevent pollution of the app_storefront_basecartridge)
+Include your template in the homePage.isml template inside app_yourcartridge </iscomment>
+
+<isinclude template="/components/modules" sf-toolkit="off" />
+<iscontentasset aid="exercise_3"/>
+
+<isset name="exercise3_value" value="${dw.content.ContentMGr.getContent()}" scope="session" />
+${custom.IDOfAttribute.exercise3_value}
+<isprint value="${exercise3_value}" />
+

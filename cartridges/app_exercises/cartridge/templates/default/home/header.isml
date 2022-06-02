@@ -21,7 +21,7 @@ var assets = require('*/cartridge/scripts/assets.js');
     <iscontentasset aid ="free_shipping_over_50" />
     </div>
 
-$(document).ready(function(){
+<iscomment> $(document).ready(function(){
 $(window).scroll(function() {
   if ($(this).scrollTop() > 0) {
     $('.a').fadeOut();
@@ -29,4 +29,4 @@ $(window).scroll(function() {
     $('.a').fadeIn();
   }
 });
-  });
+  }); </iscomment>

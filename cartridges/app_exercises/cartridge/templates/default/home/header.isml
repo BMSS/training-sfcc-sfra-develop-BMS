@@ -1,0 +1,32 @@
+<iscomment> ----------------STEPS-------------------------
+1#Include content asset from the previous exercise.
+2#Create a content asset with (Free Shipping over US$ 50.00) text.
+3#Include it in the header.isml file inside the app_yourcartridge cartridge
+4#Create the correct CSS so it will hide/show on scroll
+------------------------END------------------------ </iscomment>
+
+<isinclude template="/components/modules" sf-toolkit="off" />
+<iscomment> <iscontentasset aid="exercise_3"/> </iscomment>
+<isscript>
+var assets = require('*/cartridge/scripts/assets.js');
+ assets.addCss('custom_ex4.css');
+</isscript>
+
+
+<iscomment> <isif condition="">
+
+</isif> </iscomment>
+
+<div class="fixedElement">
+    <iscontentasset aid ="free_shipping_over_50" />
+    </div>
+
+$(document).ready(function(){
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 0) {
+    $('.a').fadeOut();
+  } else {
+    $('.a').fadeIn();
+  }
+});
+  });

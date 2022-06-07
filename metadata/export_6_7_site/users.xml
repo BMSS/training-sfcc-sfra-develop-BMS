@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users xmlns="http://www.demandware.com/xml/impex/user/2007-09-05">
+    <user login="s.buraga1@gmail.com" enabled-flag="true">
+        <credentials>
+            <external-id>cbf231a6-5e95-4c60-b4e5-28c2f038da78</external-id>
+        </credentials>
+        <profile>
+            <first-name>Marian Sebastian</first-name>
+            <last-name>Buraga</last-name>
+            <email>s.buraga1@gmail.com</email>
+            <preferred-data-locale>none</preferred-data-locale>
+        </profile>
+    </user>
+
+</users>
